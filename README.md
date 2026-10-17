@@ -28,3 +28,7 @@ This Terraform configuration automatically creates the following AWS resources:
 - **Security Group:** Firewall rules allowing SSH (Port 22), HTTP (Port 80), and HTTPS (Port 443).
 - **EC2 Instance:** An Ubuntu `t3.micro` server attached to the Security Group and Subnet.
 
+## 🛠️ Tech Stack
+- **Infrastructure as Code:** Terraform (HCL)
+- **Cloud Provider:** Amazon Web Services (AWS)
+- **Compute:** EC2 (Ubuntu)
