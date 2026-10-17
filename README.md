@@ -32,3 +32,15 @@ This Terraform configuration automatically creates the following AWS resources:
 - **Infrastructure as Code:** Terraform (HCL)
 - **Cloud Provider:** Amazon Web Services (AWS)
 - **Compute:** EC2 (Ubuntu)
+
+## 🚀 Getting Started
+
+### Prerequisites
+1. Install [Terraform](https://developer.hashicorp.com/terraform/downloads).
+2. Install the [AWS CLI](https://aws.amazon.com/cli/) and configure your credentials (`aws configure`).
+3. Ensure you have an existing SSH Key Pair in AWS for EC2 access.
+
+### 1. Initialize Terraform
+Download the necessary AWS provider plugins:
+```bash
+terraform init
