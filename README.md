@@ -69,9 +69,6 @@ terraform-learn/
 🔒 Security Note
 This repository utilizes a .gitignore file to ensure that terraform.tfstate files are never committed to version control. Terraform state files contain sensitive information, including resource IDs and potentially sensitive metadata.
 
-text
-
----
 
 ### Commit and Push it!
 
