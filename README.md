@@ -18,3 +18,13 @@ This repository contains the **Infrastructure as Code (IaC)** configuration to p
 
 Instead of manually clicking through the AWS Management Console (which is prone to human error and is not reproducible), this project uses **Terraform** to automatically build and destroy the entire network and compute stack with a single command.
 
+
+## 🏗️ Architecture Provisioned
+This Terraform configuration automatically creates the following AWS resources:
+- **VPC (Virtual Private Cloud):** An isolated network for the infrastructure.
+- **Public Subnet:** A sub-network for resources that need internet access.
+- **Internet Gateway (IGW):** To allow communication between the VPC and the internet.
+- **Route Table:** Configured with a `0.0.0.0/0` route pointing to the IGW.
+- **Security Group:** Firewall rules allowing SSH (Port 22), HTTP (Port 80), and HTTPS (Port 443).
+- **EC2 Instance:** An Ubuntu `t3.micro` server attached to the Security Group and Subnet.
+
