@@ -44,3 +44,41 @@ This Terraform configuration automatically creates the following AWS resources:
 Download the necessary AWS provider plugins:
 ```bash
 terraform init
+2. Review the Execution Plan
+See exactly what Terraform will create before it does it:
+
+bash
+terraform plan
+3. Apply the Configuration
+Build the infrastructure. Type yes when prompted:
+
+bash
+terraform apply
+4. Destroy the Infrastructure (⚠️ Important)
+To avoid being charged by AWS, always destroy the resources when you are done:
+
+bash
+terraform destroy
+📁 Repository Structure
+text
+terraform-learn/
+├── .gitignore             # Ignores Terraform state files and downloaded providers
+├── .terraform.lock.hcl    # Locks the provider versions for consistency
+├── main.tf                # The core Terraform configuration file
+└── README.md              # Project documentation
+🔒 Security Note
+This repository utilizes a .gitignore file to ensure that terraform.tfstate files are never committed to version control. Terraform state files contain sensitive information, including resource IDs and potentially sensitive metadata.
+
+text
+
+---
+
+### Commit and Push it!
+
+Run these exact commands in your terminal:
+
+```powershell
+git add README.md
+git commit -m "docs: add professional README with architecture details"
+git push origin main
+
